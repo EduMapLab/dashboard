@@ -1,0 +1,29 @@
+<div class="" *ngFor="let breadcrumb of breadcrumbs; let last = last">
+  <div class="page-header" *ngIf="breadcrumb.status && last">
+    <div class="page-block" *ngIf="last">
+      <div class="row align-items-center">
+        <div class="col-md-2">
+          <div class="page-header-title">
+            <form class="form-material" action="javascript:">
+              <div class="form-group form-primary">
+                <input type="text" name="search-text" class="form-control" id="search-friends" required="" />
+                <span class="form-bar"></span>
+                <label class="float-label"><i class="fa fa-search m-r-10"></i>Buscar</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <ul class="breadcrumb-title p-t-10">
+            <li class="breadcrumb-item">
+              <a [routerLink]="['/dashboard/default/']"> <i class="fa fa-home"></i> </a>
+            </li>
+            <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs;">
+              <a [ngClass]="breadcrumb.status === false ? 'not-active': ''" [routerLink]="breadcrumb.url">{{breadcrumb.label}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
