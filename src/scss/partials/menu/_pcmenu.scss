@@ -3229,10 +3229,10 @@ body {
             &[navbar-theme="theme#{$i}"] {
                 // background: $value;
                 .main-menu {
-                    background-color: $value;
+                    // background-color: $value;
 
                     .main-menu-header {
-                        background-color: $value;
+                        // background-color: $value;
 
                         .user-details span {
                             color: #fff;
