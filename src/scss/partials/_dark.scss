@@ -820,6 +820,6 @@ body.dark {
     }
     .main-menu .main-menu-header:before,
     .page-header:before{
-        background-color:transparentize(lighten($dark-layout-color,10%),0.2);
+        // background-color:transparentize(lighten($dark-layout-color,10%),0.2);
     }
 }

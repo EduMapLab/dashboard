@@ -66,7 +66,7 @@ $icon-color: #94a3aa,#b71c1c,#4CAF50,#d84315,#4527a0,#37474f,#7C4DFF,#FF5370;
     .main-menu-header {
         padding: 15px 0;
         // background-image: url("./../../../assets/images/user-bg.jpg");
-        background-size: cover;
+        // background-size: cover;
         text-align: center;
         position: relative;
         img{
@@ -3208,6 +3208,8 @@ body {
 
             .pcoded-header {
                 &[header-theme="theme#{$i}"] {
+
+
                     color: #fff;
 
                     .sidebar_toggle a {
@@ -3729,10 +3731,10 @@ body {
             background-size: contain;
             background-repeat: no-repeat;
             background-position: left bottom;
-            background-color: #fff;
+            // background-color: #fff;
 
             .main-menu {
-                background-color: transparentize($light-color-text,0.5);
+                // background-color: transparentize($light-color-text,0.5);
 
                 .pcoded-item .pcoded-hasmenu .pcoded-submenu li.active > a,
                 .pcoded-item .pcoded-hasmenu .pcoded-submenu li:hover > a,
@@ -4482,7 +4484,8 @@ body {
         &[fream-type="theme#{$i}"] {
             .page-header,.main-menu .main-menu-header{
                 &:before{
-                    background: transparentize($value,0.5);
+                    background: none;
+                    color: #37474f;
                 }
             }
         }
