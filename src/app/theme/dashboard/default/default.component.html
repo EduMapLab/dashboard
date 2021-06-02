@@ -5,12 +5,12 @@
     <div class="col-xl-4 col-md-4">
       <div class="card">
         <div class="card-block">
-          <div class="row mb-2">
-            <h6 class="text-muted m-b-0">Total de Alunos </h6>
+          <div class="row">
+            <h6 class="text-dark m-b-0 text-center mb-3 ml-3">Total de Alunos </h6>
           </div>
-          <div class="row align-items-center">
+          <div class="rowd-flex justify-content-center">
             <div class="col-12 px-5 mt-1">
-              <h2 class="text-c-blue">500</h2>
+              <h2 class="text-secondary text-center">500</h2>
             </div>
           </div>
         </div>
@@ -20,20 +20,20 @@
     <div class="col-xl-4 col-md-4">
       <div class="card">
         <div class="card-block">
-          <div class="row mb-2">
-            <h6 class="text-muted m-b-0">Genero</h6>
+          <div class="row">
+            <h6 class="text-dark m-b-0 mb-3 ml-3">gênero</h6>
           </div>
           <div class="row">
-          <div class="col-6 align-items-center">
+          <div class="col-6 d-flex justify-content-center">
             <div class="">
-              <h4 class="text-c-blue">500</h4>
-              <h6 class="text-muted m-b-0">Homem</h6>
+              <h4 class="text-secondary text-center">500</h4>
+              <h6 class="text-dark text-center m-b-0">Homem</h6>
             </div>
           </div>
-          <div class="col-6 align-items-center">
+          <div class="col-6 d-flex justify-content-center">
             <div class="">
-              <h4 class="text-c-blue">500</h4>
-              <h6 class="text-muted m-b-0">Mulher</h6>
+              <h4 class="text-secondary text-center">500</h4>
+              <h6 class="text-dark text-center m-b-0">Mulher</h6>
             </div>
           </div>
         </div>
@@ -44,110 +44,365 @@
     <div class="col-xl-4 col-md-4">
       <div class="card">
         <div class="card-block">
-          <div class="row mb-2">
-            <h6 class="text-muted m-b-0">Localização</h6>
+          <div class="row">
+            <h6 class="text-dark m-b-0 mb-3 ml-3">Localização</h6>
           </div>
           <div class="row">
           <div class="col-4 align-items-center">
-            <div class="">
-              <h4 class="text-c-blue">500</h4>
-              <h6 class="text-muted m-b-0">São Paulo</h6>
+            <div class="row d-flex justify-content-center"> 
+              <div class="col-12"><h4 class="text-secondary text-center">500</h4></div>
+              <div class="col-12"><h6 class="text-dark m-b-0 text-center">São Paulo</h6></div>
             </div>
           </div>
           <div class="col-4 align-items-center">
-            <div class="">
-              <h4 class="text-c-blue">500</h4>
-              <h6 class="text-muted m-b-0">Campinas</h6>
+            <div class="row d-flex justify-content-center">
+              <div class="col-12"><h4 class="text-secondary text-center">500</h4></div>
+              <div class="col-12"><h6 class="text-dark m-b-0 text-center">Campinas</h6></div>
             </div>
           </div>
           <div class="col-4 align-items-center">
-            <div class="">
-              <h4 class="text-c-blue">500</h4>
-              <h6 class="text-muted m-b-0">Franca</h6>
+            <div class="row d-flex justify-content-center">
+              <div class="col-12"><h4 class="text-secondary text-center">500</h4></div>
+              <div class="col-12"><h6 class="text-dark m-b-0 text-center">Franca</h6></div>
             </div>
           </div>
         </div>
       </div>
       </div>
     </div>
-    <!-- task, page, download counter  end -->
-
-
     
-      <!-- task and revenue start -->
       <div class="col-md-12 col-xl-4">
-        <app-card [title]="'Total de Alunos'" [cardClass]="'per-task-card'">
+        <app-card [title]="'Talento Naturais'" [cardClass]="'per-task-card'">
           <div class="row per-task-block text-center">
             <div class="col-12">
               <div data-label="45%" class="radial-bar radial-bar-45 radial-bar-lg radial-bar-primary"></div>
             </div>
           </div>
           <div class="col-12 mb-3">
-                <div class="align-middle">
-                  <img src="assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                  <div class="d-inline-block">
-                    <h6>David Jones</h6>
-                    <p class="text-muted m-b-0">Developer</p>
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="row mb-3 d-flex justify-content-center">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3">
+                          <img src="assets/images/avatar-2.jpg" alt="user image"  class="img-radius img-20 align-top m-r-15">
+                        </div>
+                        <div class="col-8">
+                          <div class="d-inline-block">
+                            <p class="text-dark text-center mb-0" style="font-size: small;">Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-inline-block">
+                        <p class="text-dark m-b-0 text-right" style="font-size: small;">82 Developer</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="align-middle m-t-25">
-                  <img src="assets/images/avatar-1.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                  <div class="d-inline-block">
-                    <h6>David Jones</h6>
-                    <p class="text-muted m-b-0">Developer</p>
+
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="row mb-3 d-flex justify-content-center">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3">
+                          <img src="assets/images/avatar-2.jpg" alt="user image"  class="img-radius img-20 align-top m-r-15">
+                        </div>
+                        <div class="col-8">
+                          <div class="d-inline-block">
+                            <p class="text-dark text-center mb-0" style="font-size: small;">Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-inline-block">
+                        <p class="text-dark m-b-0 text-right" style="font-size: small;">82 Developer</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="align-middle m-t-25">
-                  <img src="assets/images/avatar-3.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                  <div class="d-inline-block">
-                    <h6>David Jones</h6>
-                    <p class="text-muted m-b-0">Developer</p>
+
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="row mb-3 d-flex justify-content-center">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3">
+                          <img src="assets/images/avatar-2.jpg" alt="user image"  class="img-radius img-20 align-top m-r-15">
+                        </div>
+                        <div class="col-8">
+                          <div class="d-inline-block">
+                            <p class="text-dark text-center mb-0" style="font-size: small;">Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-inline-block">
+                        <p class="text-dark m-b-0 text-right" style="font-size: small;">82 Developer</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="align-middle m-t-25">
-                  <img src="assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                  <div class="d-inline-block">
-                    <h6>David Jones</h6>
-                    <p class="text-muted m-b-0">Developer</p>
+
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="row mb-3 d-flex justify-content-center">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3">
+                          <img src="assets/images/avatar-2.jpg" alt="user image"  class="img-radius img-20 align-top m-r-15">
+                        </div>
+                        <div class="col-8">
+                          <div class="d-inline-block">
+                            <p class="text-dark text-center mb-0" style="font-size: small;">Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-inline-block">
+                        <p class="text-dark m-b-0 text-right" style="font-size: small;">82 Developer</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="align-middle m-t-25">
-                  <img src="assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                  <div class="d-inline-block">
-                    <h6>David Jones</h6>
-                    <p class="text-muted m-b-0">Developer</p>
+
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="row mb-3 d-flex justify-content-center">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-3">
+                          <img src="assets/images/avatar-2.jpg" alt="user image"  class="img-radius img-20 align-top m-r-15">
+                        </div>
+                        <div class="col-8">
+                          <div class="d-inline-block">
+                            <p class="text-dark text-center mb-0" style="font-size: small;">Developer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="d-inline-block">
+                        <p class="text-dark m-b-0 text-right" style="font-size: small;">82 Developer</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+            </div>
         </app-card>
       </div>
-      <!-- task and revenue end -->
 
-    <!--  sale analytics start -->
     <div class="col-xl-8 col-md-12">
-      <app-card [title]="'Sales Analytics'">
-        <p class="m-b-10">Direct <span class="f-right"><i class="fa fa-caret-up m-r-10"></i>25%</span></p>
-        <div class="progress blue">
-          <div class="progress-bar bg-c-blue" [style.width]="'75%'"></div>
+      <app-card [title]="''">
+        <nav class="mb-3">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link " style="width: 50%;" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Maiores</button>
+            <button class="nav-link active" style="width: 50%;"  id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Menores</button>
+          </div>
+        </nav>
+        <p class="m-b-10">Direct <span class="f-right"></span></p>
+        <div class="progress primary">
+          <div class="progress-bar bg-secondary" [style.width]="'75%'"></div>
         </div>
-        <p class="m-b-10 m-t-30">Social <span class="f-right"><i class="fa fa-caret-down m-r-10"></i>58</span></p>
-        <div class="progress green">
-          <div class="progress-bar bg-c-green" [style.width]="'50%'"></div>
+        <p class="m-b-10 m-t-30">Social <span class="f-right"></span></p>
+        <div class="progress primary">
+          <div class="progress-bar bg-secondary" [style.width]="'50%'"></div>
         </div>
-        <p class="m-b-10 m-t-30">Referral <span class="f-right"><i class="fa fa-caret-up m-r-10"></i>20%</span></p>
-        <div class="progress red">
-          <div class="progress-bar bg-c-red" [style.width]="'20%'"></div>
+        <p class="m-b-10 m-t-30">Referral <span class="f-right"></span></p>
+        <div class="progress primary">
+          <div class="progress-bar bg-secondary" [style.width]="'20%'"></div>
         </div>
-        <p class="m-b-10 m-t-30">Bounce <span class="f-right"><i class="fa fa-caret-down m-r-10"></i>580</span></p>
-        <div class="progress yellow">
-          <div class="progress-bar bg-c-yellow" [style.width]="'40%'"></div>
+        <p class="m-b-10 m-t-30">Bounce <span class="f-right"></span></p>
+        <div class="progress primary">
+          <div class="progress-bar bg-secondary" [style.width]="'40%'"></div>
         </div>
-        <p class="m-b-10 m-t-30">Internet <span class="f-right"><i class="fa fa-caret-up m-r-10"></i>70%</span></p>
-        <div class="progress purple">
-          <div class="progress-bar bg-c-purple" [style.width]="'90%'"></div>
+        <p class="m-b-10 m-t-30">Internet <span class="f-right"></span></p>
+        <div class="progress primary">
+          <div class="progress-bar bg-secondary" [style.width]="'90%'"></div>
         </div>
       </app-card>
     </div>
+
+    <div class="col-md-12 col-xl-12">
+      <div class="row">
+
+        <div class="col-4">
+          <div class="col-md-12 col-xl-12">
+            <app-card [title]="'Áreas de Estudo'" [cardClass]="'per-task-card'">
+            </app-card>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-xl-12 col-md-12">
+              <app-card [title]="'Tomada de decisão'">
+                <p class="m-b-10">Direct <span class="f-right"></span></p>
+                <div class="progress primary">
+                  <div class="progress-bar bg-secondary" [style.width]="'75%'"></div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6 mt-2">
+                      <h6 class="text-center">50</h6>
+                      <p class="text-center">teste</p>
+                      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                    <div class="col-6  mt-2">
+                      <h6 class="text-center">80</h6>
+                      <p class="text-center">teste</p>
+                      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                  </div>
+                </div>
+              </app-card>
+            </div>
+      
+            <div class="col-xl-12 col-md-12">
+              <app-card [title]="'Obtenção de informação'">
+                <p class="m-b-10">Direct <span class="f-right"></span></p>
+                <div class="progress primary">
+                  <div class="progress-bar bg-secondary" [style.width]="'75%'"></div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6 mt-2">
+                      <h6 class="text-center">50</h6>
+                      <p class="text-center">teste</p>
+                      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                    <div class="col-6  mt-2">
+                      <h6 class="text-center">80</h6>
+                      <p class="text-center">teste</p>
+                      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </div>
+                  </div>
+                </div>
+              </app-card>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+
+
+  <div class="col-12">
+    <div class="card">
+      <div class="row"  style=" padding: 3% 3% 0% 3%;">
+        <h5>Filmes</h5>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illo.
+      </div>
+      <div class="row" style=" padding: 3%;">
+        <div class="col-3">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://img.travessa.com.br/livro/BA/14/143c925b-91dc-4c65-bc79-54d057a7f25c.jpg" class="img-100" alt="">
+            </div>
+            <div class="col-8">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://img.travessa.com.br/livro/BA/14/143c925b-91dc-4c65-bc79-54d057a7f25c.jpg" class="img-100" alt="">
+            </div>
+            <div class="col-8">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://img.travessa.com.br/livro/BA/14/143c925b-91dc-4c65-bc79-54d057a7f25c.jpg" class="img-100" alt="">
+            </div>
+            <div class="col-8">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://img.travessa.com.br/livro/BA/14/143c925b-91dc-4c65-bc79-54d057a7f25c.jpg" class="img-100" alt="">
+            </div>
+            <div class="col-8">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+       </div>
+      </div>
+    </div>
+
+
+    <div class="col-12">
+      <div class="card">
+        <div class="row"  style=" padding: 3% 3% 0% 3%;">
+          <h5>Personalidades</h5>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid illo.
+        </div>
+        <div class="row" style=" padding: 3%;">
+          <div class="col-3">
+            <div class="row">
+              <div class="col-4">
+                <img src="https://i.pinimg.com/originals/a4/aa/18/a4aa187ae33071f2fddb9601fe324cdb.jpg" class="img-100" alt="">
+              </div>
+              <div class="col-8">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-3">
+            <div class="row">
+              <div class="col-4">
+                <img src="https://i.pinimg.com/originals/a4/aa/18/a4aa187ae33071f2fddb9601fe324cdb.jpg" class="img-100" alt="">
+              </div>
+              <div class="col-8">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="row">
+              <div class="col-4">
+                <img src="https://i.pinimg.com/originals/a4/aa/18/a4aa187ae33071f2fddb9601fe324cdb.jpg" class="img-100" alt="">
+              </div>
+              <div class="col-8">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-3">
+            <div class="row">
+              <div class="col-4">
+                <img src="https://i.pinimg.com/originals/a4/aa/18/a4aa187ae33071f2fddb9601fe324cdb.jpg" class="img-100" alt="">
+              </div>
+              <div class="col-8">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+
+         </div>
+        </div>
+      </div>
+
 
   </div>
 </div>

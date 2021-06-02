@@ -10,7 +10,7 @@ const routes: Routes = [
     },
     children: [
       {
-        path: 'default',
+        path: '',
         loadChildren: () => import('./default/default.module').then(m => m.DefaultModule)
       },
       {
