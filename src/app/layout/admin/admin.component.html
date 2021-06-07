@@ -386,110 +386,51 @@
           </perfect-scrollbar>
         </nav>
         <div class="pcoded-content">
+
           <!-- <app-breadcrumbs></app-breadcrumbs> -->
-        <div>
-          <div class="page-header d-none d-sm-none d-md-block">
-            <div class="page-block">
-              <div class="row align-items-center">
-                <div class="col-md-8">
-                  <div class="page-header-title">
-                    <div class="col-md-4">
-                    <form class="form-material" action="javascript:">
-                      <div class="form-group form-primary">
-                        <input type="text" name="search-text" class="form-control" id="search-friends" required="" />
-                        <span class="form-bar"></span>
-                        <label class="float-label"><i class="fa fa-search m-r-10"></i>Buscar</label>
-                      </div>
-                    </form>
+
+          <div>
+            <div class="page-header d-none d-sm-none d-md-block">
+              <div class="page-block">
+                <div class="row align-items-center">
+                  <div class="col-12 col-md-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="col-md-4">
+                      <form class="form-material" action="javascript:">
+                        <div class="form-group form-primary">
+                          <input type="text" name="search-text" class="form-control" id="search-friends" required="" />
+                          <span class="form-bar"></span>
+                          <label class="float-label"><i class="fa fa-search m-r-10"></i>Sua Escola</label>
+                        </div>
+                      </form>
+                    </div>
                   </div>
+                    <div class="col-md-6">
+                      <div class="dropdown float-right float-sm-right">
+                        <span class="form-bar"></span>
+                        <a class="dropdown-toggle" href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="color:#000">
+                         Escola
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                          <li><a class="dropdown-item active" href="#">notification 1</a></li>
+                          <li><a class="dropdown-item " href="#">notification 2 </a></li>
+                          <li><a class="dropdown-item " href="#">notification 3</a></li>
+                        </ul>
+                        &nbsp;&nbsp;  <img src="assets/images/avatar-2.jpg" alt="user image"  class="img-radius img-30 align-top m-r-15">
+                      </div>
+
+                    </div>
+                    </div>
                   </div>
                 </div>
-                <!-- <div class="col-md-2">
-                  <ul [@mobileHeaderNavRight]="navRight" [ngClass]="navRight" class="nav-right">
-                    <li (clickOutside)="notificationOutsideClick('live')" class="header-notification ripple light" [ngClass]="liveNotificationClass" (click)="toggleLiveNotification()">
-                      <a href="javascript:">
-                        <i class="icon-bell"></i>
-                      </a>
-                      <ul [@notificationBottom]="liveNotification" class="show-notification" [ngClass]="liveNotificationClass">
-                        <li>
-                          <h6>Notifications</h6>
-                          <label class="label label-danger">New</label>
-                        </li>
-                        <li class="ripple">
-                          <div class="media">
-                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
-                            <div class="media-body">
-                              <h5 class="notification-user">John Doe</h5>
-                              <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                              <span class="notification-time">30 minutes ago</span>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="ripple">
-                          <div class="media">
-                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
-                            <div class="media-body">
-                              <h5 class="notification-user">Joseph William</h5>
-                              <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                              <span class="notification-time">30 minutes ago</span>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="ripple">
-                          <div class="media">
-                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
-                            <div class="media-body">
-                              <h5 class="notification-user">Sara Soudein</h5>
-                              <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                              <span class="notification-time">30 minutes ago</span>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    <li (clickOutside)="notificationOutsideClick('profile')" class="user-profile header-notification ripple light" [ngClass]="profileNotificationClass" (click)="toggleProfileNotification()">
-                      <a href="javascript:">
-                        <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                        <span>John Doe</span>
-                        <i class="icon-angle-down"></i>
-                      </a>
-                      <ul [@notificationBottom]="profileNotification" class="show-notification profile-notification" [ngClass]="profileNotificationClass">
-                        <li class="ripple">
-                          <a href="javascript:">
-                            <i class="icon-settings"></i> Settings
-                          </a>
-                        </li>
-                        <li class="ripple">
-                          <a [routerLink]="['/user/profile/']">
-                            <i class="icon-user"></i> Profile
-                          </a>
-                        </li>
-                        <li class="ripple">
-                          <a href="javascript:">
-                            <i class="icon-email"></i> My Messages
-                          </a>
-                        </li>
-                        <li class="ripple">
-                          <a [routerLink]="['/auth/lock-screen/']" target="_blank">
-                            <i class="icon-lock"></i> Lock Screen
-                          </a>
-                        </li>
-                        <li class="ripple">
-                          <a [routerLink]="['/auth/login/simple/']" target="_blank">
-                            <i class="icon-layout-sidebar-left"></i> Logout
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    </ul>
-                </div> -->
               </div>
-            <hr>
             </div>
           </div>
-        </div>
 
-        <div>
+          <!-- linha divisoria. -->
+          <hr>
+
           <div class="page-header d-none d-sm-none d-md-block">
             <div class="page-block">
               <div class="row align-items-center">
@@ -523,7 +464,6 @@
               </div>
             </div>
           </div>
-        </div>
 
 
           <div class="pcoded-inner-content">
