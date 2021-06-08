@@ -42,60 +42,60 @@ const MENUITEMS = [
         icon: 'icon-home',
       },
       {
-        state: 'Alunos',
+        state: 'alunos',
         short_label: 'N',
         name: 'Alunos',
         type: 'link',
-        icon: 'icon-users'
+        icon: 'feather users'
       },
       {
-        state: 'Talentos Naturais',
+        state: 'talentos-naturais',
         short_label: 'N',
         name: 'Talentos Naturais',
         type: 'link',
-        icon: 'icon-layout-cta-right'
+        icon: 'feather award'
       },
       {
-        state: 'navigation',
+        state: 'area-estudo',
         short_label: 'N',
         name: 'Área de Estudo',
         type: 'link',
         icon: 'feather icon-pencil'
       },
       {
-        state: 'navigation',
+        state: 'tomada-decisao',
         short_label: 'N',
         name: 'Tomada de Decisão',
         type: 'link',
-        icon: 'icon-layout-cta-right'
+        icon: 'feather heart'
       },
       {
-        state: 'navigation',
+        state: 'obtensao-informacao',
         short_label: 'N',
         name: 'Obtenção de informação',
         type: 'link',
-        icon: 'icon-layout-cta-right'
+        icon: 'feather alert-circle'
       },
       {
-        state: 'navigation',
+        state: 'filme',
         short_label: 'N',
         name: 'Filme',
         type: 'link',
-        icon: 'icon-play'
+        icon: 'feather youtube'
       },
       {
-        state: 'navigation',
+        state: 'personalidade',
         short_label: 'N',
         name: 'Personalidades',
         type: 'link',
-        icon: 'icon-layout-cta-right'
+        icon: 'feather sun'
       },
       {
-        state: 'navigation',
+        state: 'sua-escola',
         short_label: 'N',
         name: 'Sua escola',
         type: 'link',
-        icon: 'icon-layout-cta-right'
+        icon: 'feather map'
       },
     ],
   },

@@ -75,7 +75,7 @@
         <app-card [title]="'Talento Naturais'" [cardClass]="'per-task-card'">
           <div class="row per-task-block text-center">
             <div class="col-12">
-              <div data-label="45%" class="radial-bar radial-bar-45 radial-bar-lg radial-bar-primary"></div>
+              <chart id="new-user-chart" [type]="'doughnut'" [data]="newUserData" [options]="newUserOption" [style.margin-top]="'-20px'"></chart>
             </div>
           </div>
           <div class="col-12 mb-3">
@@ -229,6 +229,7 @@
         <div class="col-4">
           <div class="col-md-12 col-xl-12">
             <app-card [title]="'Áreas de Estudo'" [cardClass]="'per-task-card'">
+              <chart id="new-user-chart" [type]="'doughnut'" [data]="newUserData" [options]="newUserOption" [style.margin-top]="'-20px'"></chart>
             </app-card>
           </div>
         </div>

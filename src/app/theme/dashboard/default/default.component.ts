@@ -25,10 +25,39 @@ export class DefaultComponent implements OnInit, AfterViewInit {
   public thisMonthData: any;
   public thisMonthOption: any;
 
+  
+  public newUserData: any;
+  public newUserOption: any;
+
+
   constructor() { // private servicePNotify: NotificationsService
   }
 
   ngOnInit() {
+
+    this.newUserData = {
+      datasets: [{
+        data: [10, 34, 5],
+        backgroundColor: ['#11c15b', '#448aff', '#ff5252'],
+        label: 'Dataset 1'
+      }],
+      labels: ['Satisfied', 'Unsatisfied', 'NA']
+    };
+    this.newUserOption = {
+      responsive: true,
+      legend: {
+        position: 'right',
+      },
+      title: {
+        display: true,
+        text: '',
+      },
+      animation: {
+        animateScale: true,
+        animateRotate: true
+      }
+    };
+
     setTimeout(() => {
       AmCharts.makeChart('sales-analytics', {
         'type': 'serial',
