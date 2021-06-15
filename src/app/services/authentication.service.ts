@@ -26,13 +26,25 @@ export class AuthenticationService {
     return this.currentUserSubject.value;
   }
 
-  login(username: string, password: string, bind: object) {
-    return this.http.post<any>(`${environment.apiUrl}/api/auth`, { username, password, bind })
-      .pipe(map(user => {
-        localStorage.setItem('currentUser', JSON.stringify(user));
-        this.currentUserSubject.next(user);
-        return user;
-      }));
+  login(username: string, password: string) {
+
+    if(username === "admin@admin.com" && password === "admin"){
+
+      let user = {
+        token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+      }
+      localStorage.setItem('currentUser', JSON.stringify(user));
+      this.currentUserSubject.next(user);
+      return true;
+    } else {
+      return false;
+    }
+    // return this.http.post<any>(`${environment.apiUrl}/api/auth`, { username, password })
+    //   .pipe(map(user => {
+    //     localStorage.setItem('currentUser', JSON.stringify(user));
+    //     this.currentUserSubject.next(user);
+    //     return user;
+    //   }));
   }
 
   bind(username: string, password: string) {

@@ -1,6 +1,6 @@
 export class UserModel {
-  id!: number;
-  email!: string;
-  role!: string;
-  token!: string;
+  // id!: number;
+  // email!: string;
+  // role!: string;
+  token!: any;
 }
