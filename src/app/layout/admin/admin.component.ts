@@ -1,6 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {animate, AUTO_STYLE, state, style, transition, trigger} from '@angular/animations';
 import {MenuItems} from '../../shared/menu-items/menu-items';
+import { AuthenticationService } from 'src/app/services/authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -164,7 +166,7 @@ export class AdminComponent implements OnInit, OnDestroy {
     }
   };
 
-  constructor(public menuItems: MenuItems) {
+  constructor(public menuItems: MenuItems, private auth: AuthenticationService, private router: Router) {
     this.animateSidebar = '';
     this.navType = 'st2';
     this.themeLayout = 'vertical';
@@ -244,6 +246,12 @@ export class AdminComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.setBackgroundPattern('theme1');
+  }
+
+  toLogout(){
+    this.auth.logout();
+
+    this.router.navigate(['/auth/login'])
   }
 
   onResize(event) {

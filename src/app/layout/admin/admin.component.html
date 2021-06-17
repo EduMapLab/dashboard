@@ -401,7 +401,7 @@
 
                         <div class="form-group row">
                           <div class="col-sm-12">
-                            <input type="text" class="form-control form-control-round" placeholder="Sua Escola">
+                            <input type="text" class="form-control form-control-round" placeholder="Buscar">
                           </div>
                         </div>
 
@@ -411,15 +411,24 @@
                     <div class="col-md-6">
                       <div class="dropdown float-right float-sm-right">
                         <span class="form-bar"></span>
-                        <a class="dropdown-toggle" href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="color:#000">
-                         Escola
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                          <li><a class="dropdown-item active" href="#">notification 1</a></li>
-                          <li><a class="dropdown-item " href="#">notification 2 </a></li>
-                          <li><a class="dropdown-item " href="#">notification 3</a></li>
-                        </ul>
-                        &nbsp;&nbsp;  <img src="assets/images/avatar-2.jpg" alt="user image"  class="img-radius img-30 align-top m-r-15">
+                        
+                        <div ngbDropdown class="input-group input-group-dropdown">
+                          <div class="input-group-prepend">
+                            <img src="assets/images/avatar-2.jpg" alt="user image"  class="img-radius img-30 align-top m-r-15">
+                            &nbsp;&nbsp;  
+                            <a class="dropdown-toggle" href="javascript:"  ngbDropdownToggle  class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#000">
+                              Escola
+                             </a>
+                            <div ngbDropdownMenu class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:">Perfil</a>
+                              <a class="dropdown-item" href="javascript:">Configurações</a>
+                              <a class="dropdown-item" href="javascript:">Termos de uso</a>
+                              <div role="separator" class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="javascript:" (click)="toLogout()">Sair</a>
+                            </div>
+                          </div>
+                        </div>
+                        
                       </div>
 
                     </div>
